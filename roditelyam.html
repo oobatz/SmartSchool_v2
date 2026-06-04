@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Родителям — МБОУ «СОШ № 1»</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header bg-white shadow-sm sticky top-0 z-50 transition-shadow">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex items-center justify-between py-3 gap-4">
+      <div class="flex items-center gap-3 min-w-0">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-school-blue to-blue-800 flex items-center justify-center text-white font-bold text-xl shadow-sm shrink-0">Ш</div>
+        <div class="min-w-0">
+          <p class="text-[11px] text-gray-500 leading-tight">МБОУ «СОШ № 1»</p>
+          <p class="text-sm font-semibold text-school-blue leading-tight line-clamp-2">Муниципальное бюджетное общеобразовательное учреждение «Средняя общеобразовательная школа № 1»</p>
+        </div>
+      </div>
+      <div class="hidden lg:flex items-center gap-5 text-xs text-gray-500">
+        <div class="flex items-center gap-1.5"><svg class="shrink-0 text-gray-400" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg><span class="whitespace-nowrap">г. Москва, ул. Школьная, д. 1</span></div>
+        <div class="flex items-center gap-1.5"><svg class="shrink-0 text-gray-400" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg><span class="whitespace-nowrap">+7 (495) 123-45-67</span></div>
+        <div class="flex items-center gap-1.5"><svg class="shrink-0 text-gray-400" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg><span class="whitespace-nowrap">school1@example.ru</span></div>
+      </div>
+      <div class="flex items-center gap-1">
+        <button onclick="toggleVision()" class="vision-btn p-2 rounded-lg hover:bg-gray-100 transition-colors text-gray-600" title="Версия для слабовидящих" aria-label="Версия для слабовидящих"><span class="vision-icon text-lg">👁</span></button>
+        <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors text-gray-600" aria-label="Меню">
+          <svg id="menu-open-btn" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+          <svg id="menu-close-btn" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="hidden lg:flex border-t border-gray-100/80">
+      <ul class="flex">
+        <li><a href="/" class="nav-link block px-4 py-3 text-sm font-medium text-gray-600 hover:text-school-blue transition-colors">Главная</a></li>
+        <li><a href="svedeniya/osnovnye-svedeniya.html" class="nav-link block px-4 py-3 text-sm font-medium text-gray-600 hover:text-school-blue transition-colors">Сведения об ОО</a></li>
+        <li><a href="roditelyam.html" class="nav-link block px-4 py-3 text-sm font-medium text-gray-600 hover:text-school-blue transition-colors">Родителям</a></li>
+        <li><a href="obuchayushchimsya.html" class="nav-link block px-4 py-3 text-sm font-medium text-gray-600 hover:text-school-blue transition-colors">Обучающимся</a></li>
+        <li><a href="pedagogam.html" class="nav-link block px-4 py-3 text-sm font-medium text-gray-600 hover:text-school-blue transition-colors">Педагогам</a></li>
+        <li><a href="kontakty.html" class="nav-link block px-4 py-3 text-sm font-medium text-gray-600 hover:text-school-blue transition-colors">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="mobile-menu" class="lg:hidden overflow-hidden transition-all duration-300 ease-in-out" style="max-height:0">
+    <nav class="bg-white border-t border-gray-100">
+      <ul class="max-w-7xl mx-auto px-4 py-2 space-y-0.5">
+        <li><a href="/" class="block py-2.5 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors" onclick="closeMobileMenu()">Главная</a></li>
+        <li><a href="svedeniya/osnovnye-svedeniya.html" class="block py-2.5 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors" onclick="closeMobileMenu()">Сведения об ОО</a></li>
+        <li><a href="roditelyam.html" class="block py-2.5 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors" onclick="closeMobileMenu()">Родителям</a></li>
+        <li><a href="obuchayushchimsya.html" class="block py-2.5 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors" onclick="closeMobileMenu()">Обучающимся</a></li>
+        <li><a href="pedagogam.html" class="block py-2.5 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors" onclick="closeMobileMenu()">Педагогам</a></li>
+        <li><a href="kontakty.html" class="block py-2.5 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors" onclick="closeMobileMenu()">Контакты</a></li>
+      </ul>
+      <div class="max-w-7xl mx-auto px-4 pb-4 pt-2 border-t border-gray-100 mt-2 space-y-2 text-sm text-gray-500">
+        <div class="flex items-center gap-2"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg><span>г. Москва, ул. Школьная, д. 1</span></div>
+        <div class="flex items-center gap-2"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg><span>+7 (495) 123-45-67</span></div>
+        <div class="flex items-center gap-2"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg><span>school1@example.ru</span></div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ===== BREADCRUMBS ===== -->
+<section class="bg-gray-50 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 py-3">
+    <div class="flex items-center gap-2 text-xs text-gray-500">
+      <a href="/" class="hover:text-school-blue transition-colors">Главная</a>
+      <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+      <span class="text-gray-900 font-medium">Родителям</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PAGE TITLE ===== -->
+<section class="py-10 md:py-12 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <h1 class="text-2xl md:text-3xl font-bold text-school-blue">Родителям</h1>
+    <p class="text-sm text-gray-500 mt-1.5">Полезная информация для родителей и законных представителей учащихся</p>
+  </div>
+</section>
+
+<!-- ===== A. ПРИЁМ В ШКОЛУ ===== -->
+<section class="pb-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 border-l-4 border-l-school-blue p-6 md:p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-school-blue/10 flex items-center justify-center text-school-blue shrink-0">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/></svg>
+        </div>
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900">Приём в школу</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-sm text-gray-600 leading-relaxed mb-5">Приём заявлений в 1 класс на 2026–2027 учебный год начинается с 1 апреля 2026 года. Запись осуществляется через портал «Госуслуги» или при личном обращении в школу. Для зачисления необходимо предоставить полный пакет документов.</p>
+          <div class="bg-school-blue/5 rounded-xl p-5 border border-school-blue/20">
+            <h3 class="text-sm font-semibold text-school-blue mb-3">Закреплённые территории</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="inline-block px-3 py-1.5 bg-school-blue/10 text-school-blue text-xs font-medium rounded-full">ул. Школьная, д. 1–25</span>
+              <span class="inline-block px-3 py-1.5 bg-school-blue/10 text-school-blue text-xs font-medium rounded-full">ул. Садовая, д. 2–18</span>
+              <span class="inline-block px-3 py-1.5 bg-school-blue/10 text-school-blue text-xs font-medium rounded-full">ул. Лесная, д. 3–15</span>
+              <span class="inline-block px-3 py-1.5 bg-school-blue/10 text-school-blue text-xs font-medium rounded-full">ул. Парковая, д. 1–12</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-900 mb-3">Документы для приёма</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2.5 text-sm text-gray-600"><svg class="shrink-0 text-school-blue" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Заявление</li>
+            <li class="flex items-center gap-2.5 text-sm text-gray-600"><svg class="shrink-0 text-school-blue" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Свидетельство о рождении</li>
+            <li class="flex items-center gap-2.5 text-sm text-gray-600"><svg class="shrink-0 text-school-blue" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Паспорт родителя</li>
+            <li class="flex items-center gap-2.5 text-sm text-gray-600"><svg class="shrink-0 text-school-blue" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Справка о регистрации</li>
+            <li class="flex items-center gap-2.5 text-sm text-gray-600"><svg class="shrink-0 text-school-blue" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Медицинская карта</li>
+            <li class="flex items-center gap-2.5 text-sm text-gray-600"><svg class="shrink-0 text-school-blue" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>СНИЛС</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-6 bg-gray-50 rounded-xl p-5 border border-gray-200">
+        <div class="flex items-center gap-3">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="text-school-blue shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+          <div>
+            <p class="text-sm font-semibold text-gray-900">Приём заявлений</p>
+            <p class="text-xs text-gray-500 mt-0.5">с 1 апреля 2026 года через портал «Госуслуги» или по адресу: г. Москва, ул. Школьная, д. 1, кабинет 101</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== B. ГОРЯЧЕЕ ПИТАНИЕ ===== -->
+<section class="pb-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 border-l-4 border-l-school-orange p-6 md:p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-school-orange/10 flex items-center justify-center text-school-orange shrink-0">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9V4.5M9 9H4.5M9 9l5.25-5.25M12 12a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Z" transform="rotate(90 12 12)"/></svg>
+        </div>
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900">Горячее питание</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="text-sm text-gray-600 leading-relaxed mb-5">В школе организовано двухразовое горячее питание для учащихся. Утверждено примерное десятидневное меню с учётом требований СанПиН. Столовая оснащена современным оборудованием, работают квалифицированные повара.</p>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="bg-school-orange/10 rounded-xl p-5 text-center border border-school-orange/20">
+              <p class="text-2xl font-bold text-school-orange">120₽</p>
+              <p class="text-xs text-gray-600 mt-1">Завтрак</p>
+            </div>
+            <div class="bg-school-orange/10 rounded-xl p-5 text-center border border-school-orange/20">
+              <p class="text-2xl font-bold text-school-orange">180₽</p>
+              <p class="text-xs text-gray-600 mt-1">Обед</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-900 mb-3">Льготное питание</h3>
+          <p class="text-xs text-gray-500 mb-3">Право на бесплатное питание имеют:</p>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2.5 text-sm text-gray-600"><svg class="shrink-0 text-school-orange" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>дети из многодетных семей</li>
+            <li class="flex items-center gap-2.5 text-sm text-gray-600"><svg class="shrink-0 text-school-orange" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>дети из малообеспеченных семей</li>
+            <li class="flex items-center gap-2.5 text-sm text-gray-600"><svg class="shrink-0 text-school-orange" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>дети-инвалиды</li>
+            <li class="flex items-center gap-2.5 text-sm text-gray-600"><svg class="shrink-0 text-school-orange" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>дети с ОВЗ</li>
+            <li class="flex items-center gap-2.5 text-sm text-gray-600"><svg class="shrink-0 text-school-orange" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>дети, потерявшие кормильца</li>
+            <li class="flex items-center gap-2.5 text-sm text-gray-600"><svg class="shrink-0 text-school-orange" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>дети участников СВО</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== C. БЕЗОПАСНОСТЬ ===== -->
+<section class="pb-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 border-l-4 border-l-school-red p-6 md:p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-school-red/10 flex items-center justify-center text-school-red shrink-0">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg>
+        </div>
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900">Безопасность</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="bg-school-red/5 rounded-xl p-5 border border-red-100">
+          <h3 class="text-sm font-semibold text-school-red mb-3 flex items-center gap-2"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9"/></svg>Пропускной режим</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-xs text-gray-600"><svg class="shrink-0 text-school-red" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Электронные пропуска</li>
+            <li class="flex items-center gap-2 text-xs text-gray-600"><svg class="shrink-0 text-school-red" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Вход по паспорту для гостей</li>
+            <li class="flex items-center gap-2 text-xs text-gray-600"><svg class="shrink-0 text-school-red" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Журнал регистрации посетителей</li>
+          </ul>
+        </div>
+        <div class="bg-school-red/5 rounded-xl p-5 border border-red-100">
+          <h3 class="text-sm font-semibold text-school-red mb-3 flex items-center gap-2"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.048 8.287 8.287 0 0 0 9 9.6a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z"/></svg>Пожарная безопасность</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-xs text-gray-600"><svg class="shrink-0 text-school-red" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Автоматическая сигнализация</li>
+            <li class="flex items-center gap-2 text-xs text-gray-600"><svg class="shrink-0 text-school-red" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Система оповещения</li>
+            <li class="flex items-center gap-2 text-xs text-gray-600"><svg class="shrink-0 text-school-red" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Ежемесячные учебные эвакуации</li>
+          </ul>
+        </div>
+        <div class="bg-school-red/5 rounded-xl p-5 border border-red-100">
+          <h3 class="text-sm font-semibold text-school-red mb-3 flex items-center gap-2"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>Антитеррор</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-xs text-gray-600"><svg class="shrink-0 text-school-red" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Видеонаблюдение 24/7</li>
+            <li class="flex items-center gap-2 text-xs text-gray-600"><svg class="shrink-0 text-school-red" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Кнопка тревожной сигнализации</li>
+            <li class="flex items-center gap-2 text-xs text-gray-600"><svg class="shrink-0 text-school-red" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>Лицензированная охрана</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== D. ИНФОРМАЦИОННЫЕ РЕСУРСЫ ===== -->
+<section class="pb-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 border-l-4 border-l-school-blue p-6 md:p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-school-blue/10 flex items-center justify-center text-school-blue shrink-0">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
+        </div>
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900">Информационные ресурсы</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <a href="#" class="group flex flex-col items-center gap-3 p-6 bg-school-blue/5 rounded-xl border border-school-blue/20 hover:bg-school-blue hover:text-white transition-all">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="text-school-blue group-hover:text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+          <span class="text-sm font-semibold text-gray-700 group-hover:text-white text-center">Портал «Госуслуги»</span>
+        </a>
+        <a href="#" class="group flex flex-col items-center gap-3 p-6 bg-school-blue/5 rounded-xl border border-school-blue/20 hover:bg-school-blue hover:text-white transition-all">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="text-school-blue group-hover:text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
+          <span class="text-sm font-semibold text-gray-700 group-hover:text-white text-center">Электронный дневник</span>
+        </a>
+        <a href="#" class="group flex flex-col items-center gap-3 p-6 bg-school-blue/5 rounded-xl border border-school-blue/20 hover:bg-school-blue hover:text-white transition-all">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="text-school-blue group-hover:text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+          <span class="text-sm font-semibold text-gray-700 group-hover:text-white text-center">Официальный сайт</span>
+        </a>
+        <a href="#" class="group flex flex-col items-center gap-3 p-6 bg-school-blue/5 rounded-xl border border-school-blue/20 hover:bg-school-blue hover:text-white transition-all">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="text-school-blue group-hover:text-white"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.627 48.627 0 0 1 12 20.904a48.627 48.627 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.57 50.57 0 0 0-2.658-.813A59.905 59.905 0 0 1 12 3.493a59.902 59.902 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342"/></svg>
+          <span class="text-sm font-semibold text-gray-700 group-hover:text-white text-center">Управление образования</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== E. ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ ===== -->
+<section class="pb-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="bg-white rounded-xl shadow-sm border border-gray-100 border-l-4 border-l-gray-300 p-6 md:p-8">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center text-gray-600 shrink-0">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/></svg>
+        </div>
+        <h2 class="text-xl md:text-2xl font-bold text-gray-900">Часто задаваемые вопросы</h2>
+      </div>
+      <div class="divide-y divide-gray-100">
+        <div class="faq-item">
+          <button class="faq-btn w-full flex items-center justify-between gap-3 py-4 text-left">
+            <span class="text-sm md:text-base font-medium text-gray-900">Как подать заявление в 1 класс?</span>
+            <svg class="faq-icon shrink-0 transition-transform duration-300" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="faq-answer overflow-hidden transition-all duration-300" style="max-height:0">
+            <div class="pb-4 text-sm text-gray-600 leading-relaxed">Подать заявление можно через портал «Госуслуги» или лично в школе в приёмные часы. Приём заявлений на 2026–2027 учебный год начинается с 1 апреля 2026 года. При себе необходимо иметь паспорт и свидетельство о рождении ребёнка.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn w-full flex items-center justify-between gap-3 py-4 text-left">
+            <span class="text-sm md:text-base font-medium text-gray-900">Как получить путёвку в летний лагерь?</span>
+            <svg class="faq-icon shrink-0 transition-transform duration-300" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="faq-answer overflow-hidden transition-all duration-300" style="max-height:0">
+            <div class="pb-4 text-sm text-gray-600 leading-relaxed">Заявления на получение путёвки в школьный летний лагерь принимаются в мае. Льготные категории граждан имеют право на бесплатную путёвку. Подробную информацию можно получить у классного руководителя или в администрации школы.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn w-full flex items-center justify-between gap-3 py-4 text-left">
+            <span class="text-sm md:text-base font-medium text-gray-900">Как организовано питание в школе?</span>
+            <svg class="faq-icon shrink-0 transition-transform duration-300" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="faq-answer overflow-hidden transition-all duration-300" style="max-height:0">
+            <div class="pb-4 text-sm text-gray-600 leading-relaxed">В школе организовано двухразовое горячее питание: завтрак и обед. Утверждено десятидневное меню с учётом требований СанПиН. Для льготных категорий учащихся предусмотрено бесплатное питание. Стоимость завтрака — 120 рублей, обеда — 180 рублей.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn w-full flex items-center justify-between gap-3 py-4 text-left">
+            <span class="text-sm md:text-base font-medium text-gray-900">Как получить электронный дневник?</span>
+            <svg class="faq-icon shrink-0 transition-transform duration-300" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </button>
+          <div class="faq-answer overflow-hidden transition-all duration-300" style="max-height:0">
+            <div class="pb-4 text-sm text-gray-600 leading-relaxed">Доступ к электронному дневнику осуществляется через портал «Госуслуги» или региональный портал образовательных услуг. Для получения доступа необходимо обратиться к классному руководителю для регистрации учётной записи.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-school-blue text-white">
+  <div class="max-w-7xl mx-auto px-4 py-14 md:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-11 h-11 rounded-xl bg-white/15 flex items-center justify-center text-white font-bold text-xl">Ш</div>
+          <div><p class="text-xs text-blue-300">МБОУ «СОШ № 1»</p><p class="text-sm font-semibold leading-tight">Муниципальное бюджетное общеобразовательное учреждение «Средняя общеобразовательная школа № 1»</p></div>
+        </div>
+        <p class="text-sm text-blue-200 leading-relaxed">Современная школа, в которой каждый ученик может раскрыть свои таланты и получить качественное образование.</p>
+      </div>
+      <div>
+        <h3 class="text-sm font-semibold uppercase tracking-wider mb-5 text-blue-300">Навигация</h3>
+        <ul class="space-y-2.5">
+          <li><a href="/" class="text-sm text-blue-100 hover:text-white transition-colors inline-flex items-center gap-1 group">Главная</a></li>
+          <li><a href="svedeniya/osnovnye-svedeniya.html" class="text-sm text-blue-100 hover:text-white transition-colors inline-flex items-center gap-1 group">Сведения об ОО</a></li>
+          <li><a href="roditelyam.html" class="text-sm text-blue-100 hover:text-white transition-colors inline-flex items-center gap-1 group">Родителям</a></li>
+          <li><a href="obuchayushchimsya.html" class="text-sm text-blue-100 hover:text-white transition-colors inline-flex items-center gap-1 group">Обучающимся</a></li>
+          <li><a href="pedagogam.html" class="text-sm text-blue-100 hover:text-white transition-colors inline-flex items-center gap-1 group">Педагогам</a></li>
+          <li><a href="kontakty.html" class="text-sm text-blue-100 hover:text-white transition-colors inline-flex items-center gap-1 group">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-sm font-semibold uppercase tracking-wider mb-5 text-blue-300">Контакты</h3>
+        <ul class="space-y-3.5 text-sm text-blue-100">
+          <li class="flex items-start gap-2.5"><div class="w-7 h-7 rounded-lg bg-white/10 flex items-center justify-center shrink-0 mt-0.5"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="text-blue-200"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg></div><span>г. Москва, ул. Школьная, д. 1</span></li>
+          <li class="flex items-center gap-2.5"><div class="w-7 h-7 rounded-lg bg-white/10 flex items-center justify-center shrink-0"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="text-blue-200"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg></div><span>+7 (495) 123-45-67</span></li>
+          <li class="flex items-center gap-2.5"><div class="w-7 h-7 rounded-lg bg-white/10 flex items-center justify-center shrink-0"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" class="text-blue-200"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg></div><span>school1@example.ru</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-sm font-semibold uppercase tracking-wider mb-5 text-blue-300">Официальные порталы</h3>
+        <ul class="space-y-2.5">
+          <li><a href="https://edu.gov.ru" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-100 hover:text-white transition-colors inline-flex items-center gap-1 group">Минпросвещения России</a></li>
+          <li><a href="#" class="text-sm text-blue-100 hover:text-white transition-colors inline-flex items-center gap-1 group">Управление образования</a></li>
+          <li><a href="https://gosuslugi.ru" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-100 hover:text-white transition-colors inline-flex items-center gap-1 group">Госуслуги</a></li>
+        </ul>
+        <h3 class="text-sm font-semibold uppercase tracking-wider mb-3 mt-7 text-blue-300">Карта проезда</h3>
+        <div class="bg-white/10 backdrop-blur-sm rounded-xl h-32 flex items-center justify-center flex-col gap-1.5 text-sm text-blue-200 border border-white/5"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg><span>Карта проезда</span></div>
+      </div>
+    </div>
+    <div class="border-t border-white/15 mt-10 pt-7 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-blue-300">
+      <p>&copy; 2026 МБОУ «СОШ № 1». Все права защищены.</p>
+      <p class="text-xs">Сайт создан в соответствии с требованиями законодательства РФ</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
